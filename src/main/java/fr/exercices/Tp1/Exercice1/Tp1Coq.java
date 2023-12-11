@@ -10,26 +10,26 @@ public class Tp1Coq {
 
         int[] notes = new int[3];
 
-        for (int i = 0; i < 3; i++) {
+        for (int index = 0; index < 3; index++) {
             try {
-                System.out.print("Note " + (i + 1) + " saisie : ");
+                System.out.print("Note " + (index + 1) + " saisie : ");
                 int note = Integer.parseInt(scanner.nextLine());
 
                 if (note < 0 || note > 20) {
                     throw new IllegalArgumentException("La note doit être comprise entre 0 et 20.");
                 }
 
-                notes[i] = note;
+                notes[index] = note;
             } catch (NumberFormatException e) {
                 System.out.println("Veuillez saisir un nombre entier.");
-                i--;
+                index--;
             }
         }
 
         System.out.println( "moyenne " + calculerMoyenne(notes));
     }
 
-    private static int calculerMoyenne(int[] notes) {
+    private static double calculerMoyenne(int[] notes) {
         int somme = 0;
 
         for (int note : notes) {
