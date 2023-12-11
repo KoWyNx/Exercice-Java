@@ -2,8 +2,9 @@ package fr.exercices.Tp1.Exercice2;
 
 import java.util.Scanner;
 
-public class Tp2Coq {
+public class Exercice2Coq {
 
+    /** Permet de calculer le prixTTC d'un montant indiqué par l'utilisateur  */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,6 +22,7 @@ public class Tp2Coq {
         System.out.println("Explication: " + prixHT + " * 1.2 = " + prixTTC);
     }
 
+    /** Calcule le prix TTC à l'aide du prix HT */
     private static float calculerPrixTTC(float prixHT) {
         return prixHT * 1.2f;
     }

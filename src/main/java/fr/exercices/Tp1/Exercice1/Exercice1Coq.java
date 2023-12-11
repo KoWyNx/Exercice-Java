@@ -2,8 +2,9 @@ package fr.exercices.Tp1.Exercice1;
 
 import java.util.Scanner;
 
-public class Tp1Coq {
+public class Exercice1Coq {
 
+    /** Permet de demander a l'utilisateur ses notes pour ensuite calculer la moyenne  */
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -29,6 +30,7 @@ public class Tp1Coq {
         System.out.println( "moyenne " + calculerMoyenne(notes));
     }
 
+    /** Fonction qui permet de calculer la moyenne des notes  */
     private static double calculerMoyenne(int[] notes) {
         int somme = 0;
 
